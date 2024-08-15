@@ -1,0 +1,59 @@
+/* Define keyframes for animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations */
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-moveIn {
+  animation: moveInFromRight 1s ease-out;
+}
+
+.animate-moveInLeft {
+  animation: moveInFromLeft 1s ease-out;
+}
+
+.animate-moveInBottom {
+  animation: moveInFromBottom 1s ease-out;
+}

@@ -1,0 +1,125 @@
+.works-section {
+  overflow: hidden;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+/* Define the animation for component entrance */
+@keyframes animateInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class to apply animation */
+.animate-in {
+  animation: animateInFromLeft 1s ease-out;
+}
+
+/* Title entrance animation from left */
+@keyframes animateInTitleFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tooltip {
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* List entrance animation from right */
+@keyframes animateInListFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Title entrance animation class */
+.animate-in-title {
+  animation: animateInTitleFromLeft 1s ease-out;
+}
+
+/* List entrance animation class */
+.animate-in-list {
+  animation: animateInListFromRight 1s ease-out;
+}
+
+/* Slow bounce animation */
+@keyframes slowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-slow-bounce {
+  animation: slowBounce 2s ease-in-out infinite;
+}
